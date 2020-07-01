@@ -2,9 +2,19 @@ import mastering_pycharm_editor_section_service
 
 
 def main():
+    show_header()
+
+    mastering_pycharm_editor_section_service.download_info()
+
+    display_results()
+
+
+def show_header():
     print("Welcome to the talking python info downloader")
     print()
 
+
+def display_results():
     nmbr_episodes = mastering_pycharm_editor_section_service.download_info()
 
     print("number of episodes ", nmbr_episodes)
